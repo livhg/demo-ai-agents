@@ -35,7 +35,6 @@ Icon 設計工作室是一個多代理系統，展示如何使用 Google ADK 建
 ### 1. 啟動 ADK Web UI
 
 ```bash
-cd sessions/ai-agents/example/adk-project
 adk web
 ```
 
