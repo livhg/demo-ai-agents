@@ -19,11 +19,23 @@ APPROVAL_COORDINATOR_PROMPT = """
 - 主要視覺元素
 - 預期效果
 
-## 2. 請求人工確認
+## 2. 提示用戶切換到 Terminal
+
+在呼叫 `request_human_approval` 函式之前，**必須**先明確告知用戶：
+
+```
+⚠️ **重要提示**：系統即將暫停等待你的確認。
+
+請切換到**啟動 `adk web` 的 Terminal 視窗**，系統會在那裡等待你的輸入。
+
+（注意：在 Web UI 的 chat 中輸入將無效，必須在 Terminal 中輸入）
+```
+
+## 3. 請求人工確認
 
 呼叫 `request_human_approval` 函式，暫停流程等待人工輸入。
 
-## 3. 處理人工反饋
+## 4. 處理人工反饋
 
 根據人工的反饋回傳相應的狀態：
 
@@ -47,7 +59,7 @@ APPROVAL_COORDINATOR_PROMPT = """
 
 # 重要提醒
 
-- **必須**呼叫 `request_human_approval` 函式
+- **必須**先提示用戶切換到 Terminal，再呼叫 `request_human_approval` 函式
 - 不要自行判斷是否批准，一定要等待人工輸入
 - 準確理解人工的反饋意圖
 
