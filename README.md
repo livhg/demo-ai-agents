@@ -1,4 +1,4 @@
-# Multi-Agent System -- 使用 ADK 框架
+# Multi-Agent System — 使用 Google ADK 框架
 
 使用 Google Agent Development Kit (ADK) 建立的多代理系統範例集，展示四種不同的多代理工作流模式。
 
