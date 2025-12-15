@@ -14,9 +14,12 @@
 
 ### 設定 API Key
 
-在各 Agent 目錄內建立 `.env` 檔案，填入你的 API Key：
+在各 Agent 目錄內 `.env` 檔案，填入你的 API Key：
 
 ```
+# 預設的其他內容
+...
+...
 GOOGLE_API_KEY=your-api-key-here
 ```
 
